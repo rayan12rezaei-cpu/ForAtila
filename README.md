@@ -1,4 +1,4 @@
-This is for u **Atila Ahmad Zade**!
+This is for you **Atila Ahmadzade**!
 
 این برای توئه **آتیلا احمدزاده**!
 
