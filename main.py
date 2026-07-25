@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QVBoxLay
 from PyQt5.QtCore import Qt
 
 try: json_path = f"{sys._MEIPASS}\\data.json"
-except: json_path = f"{os.path.abspath(".")}\\data.json"
+except: json_path = f"{os.path.abspath('.')}\\data.json"
 
 style = """
 
