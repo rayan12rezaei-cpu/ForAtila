@@ -40,7 +40,7 @@ class ProvinceDetectorApp(QWidget):
         
         super().__init__()
 
-        detector = PrvinceDetector(json_path)
+        detector = ProvinceDetector(json_path)
 
         self.setObjectName("Win")
         
