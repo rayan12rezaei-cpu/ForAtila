@@ -8,7 +8,7 @@ except: json_path = f"{os.path.abspath('.')}\\data.json"
 
 style = """
 
-QWidget#Win {
+QWidget#Frame {
     background-color: #212121;
     border-radius: 10px;
 }
@@ -40,6 +40,9 @@ class ProvinceDetectorApp(QWidget):
         
         super().__init__()
 
+        self.frame = QWidget()
+        self.frame.setObjectName("Frame")
+
         detector = ProvinceDetector(json_path)
 
         self.setObjectName("Win")
@@ -66,7 +69,7 @@ class ProvinceDetectorApp(QWidget):
         self.closeBtn.setObjectName("close")
         self.main_layout.addWidget(self.closeBtn)
         
-        self.setLayout(self.main_layout)
+        self.frame.setLayout(self.main_layout)
 
     def detect(self):
         self.result.setText(self.detector.detect(self.codeEntry.text()))
